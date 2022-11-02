@@ -1,5 +1,6 @@
-import React from 'react';
+/* eslint-disable prettier/prettier */
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const User = ({ id, name, email, phone }) => {
   return (
