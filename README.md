@@ -7,7 +7,7 @@
 - useEffect() hook
 - error handling when loading data
 
-### [Click here to see the project demo](https://users-mgt-app.netlify.app/)
+### [Click here to see the project demo Third assignment](https://vermillion-biscochitos-3d0e07.netlify.app)
 
 ### Assignment steps:
 
