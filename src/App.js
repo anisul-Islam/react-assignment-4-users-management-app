@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Users from './components/Users';
 
@@ -9,7 +9,7 @@ const App = () => {
   const [error, setError] = useState(null);
 
   // step2 : use useEffect for fetching the data including updating isLoading and error states
-  useState(() => {
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
     .then((res) => {
       if(!res.ok){
@@ -28,7 +28,7 @@ const App = () => {
       setIsLoading(false)
     })
   }, [])
-  
+
   return (
     <div className="container">
       <h1 className="title">Users Management App</h1>
