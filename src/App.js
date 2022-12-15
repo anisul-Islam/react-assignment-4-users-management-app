@@ -1,33 +1,12 @@
-import React,{useState,useEffect}  from 'react';
+import React  from 'react';
 
 
 import Users from './components/Users';
+import UseFetch from './components/usefetchHook/useFetch';
 
 const App = () => {
   // step1 : declare three states here : users, isLoading, error
-  const [users,setUsers]=useState(null)
-  const [isLoading, setIsLoading] = useState(true);
-  const [error,setError]=useState(null)
-
-  useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then((res)=> {
-            if(!res.ok)
-                    throw new Error("problem fetching Users")
-            return res.json()
-        })
-        .then((data)=>{
-            setUsers(data); 
-            setIsLoading(false)
-        })
-        .catch((err)=>{
-            setError(err.message)
-            setIsLoading(false)
-            
-        })
- 
-}, []);
-
+ const {users,isLoading,error}=UseFetch('https://jsonplaceholder.typicode.com/users')
 console.log(users)
  
 
@@ -40,7 +19,7 @@ console.log(users)
       <h1 className="title">Users Management App</h1>
       {isLoading && <p>Loading users...</p>}
       {error && <p>{error}</p>}
-      <Users usersData={users} />
+      {users && <Users usersData={users} />}
      
     </div>
   );

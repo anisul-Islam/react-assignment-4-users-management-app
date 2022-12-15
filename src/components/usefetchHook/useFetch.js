@@ -1,9 +1,9 @@
-import React,{useState,useEffect} from 'react'
+import {useState,useEffect} from 'react'
 
 const UseFetch = (url) => {
-    const [users,setUsers]=useState([])
+    const [users,setUsers]=useState(null)
     const [isLoading,setIsLoading]=useState(true)
-    const [error,setError]=useState('')
+    const [error,setError]=useState(null)
     
 
     useEffect(() => {
