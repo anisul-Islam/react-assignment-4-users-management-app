@@ -7,7 +7,7 @@
 - useEffect() hook
 - error handling when loading data
 
-### [Click here to see the project demo](https://users-mgt-app.netlify.app/)
+### [Click here to see the project demo](https://react-ekroni-usermanagement-app.netlify.app/)
 
 ### Assignment steps:
 
