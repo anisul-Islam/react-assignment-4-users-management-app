@@ -30,7 +30,40 @@ body {
   text-align: center;
   margin: 1rem 0;
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+.loadingUser {
+  width: 250px;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  border-radius: 16px;
+}
+.dataFetchingMessage {
+  width: 380px;
+  background-color: #d9edeb;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  color: rgb(32, 222, 32);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  border-radius: 16px;
+}
+.dataFetchingErrorMessage {
+  width: 380px;
+  background-color: #15cdc7;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  color: rgb(226, 12, 12);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  border-radius: 16px;
 }
 
 .users {
