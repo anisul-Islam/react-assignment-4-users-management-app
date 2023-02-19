@@ -25,6 +25,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
+a {
+  color: #15cdc7;
+  text-decoration: underline;
+}
 
 .title {
   text-align: center;
