@@ -18,7 +18,7 @@ User.propTypes = {
   id: PropTypes.number,
   name: PropTypes.string,
   email: PropTypes.string,
-  phone: PropTypes.string
+  phone: PropTypes.string,
 };
 
 export default User;
