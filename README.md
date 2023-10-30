@@ -1,18 +1,8 @@
-# React assigment - 4 : User Management App
+# React + Vite
 
-## Total points = 5
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Purpose of this assignment : Testing students skills on
+Currently, two official plugins are available:
 
-- useEffect() hook
-- error handling when loading data
-
-### [Click here to see the project demo](https://users-mgt-app.netlify.app/)
-
-### Assignment steps:
-
-- all the instructtions are given in App component
-  - only 3 tasks to do in App component
-- finally check the project demo and try to match your one as much as possible
-
-#### [Assignment was created with &hearts; by [anisul islam](https://www.youtube.com/c/anisulislamrubel) &copy;Anisul Islam]
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
