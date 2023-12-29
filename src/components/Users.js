@@ -1,9 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import User from './User';
+import User from "./User";
 
 const Users = (props) => {
+  console.log(props);
   return (
     <section className="users">
       {props.users.map((user) => (
@@ -14,7 +15,7 @@ const Users = (props) => {
 };
 
 Users.propTypes = {
-  users: PropTypes.array
+  users: PropTypes.array,
 };
 
 export default Users;
